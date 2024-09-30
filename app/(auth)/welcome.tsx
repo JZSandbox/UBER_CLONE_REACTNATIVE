@@ -4,13 +4,19 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Swiper from "react-native-swiper";
 import { onBoarding } from "../constants";
+import CustomButton from "@/components/CustomButton";
+import { fontSize } from "nativewind/dist/tailwind/native/font-size";
 
 const Onboarding = () => {
   const pressButtonHandler = () => {
-    router.replace("/(auth)/sing-in");
+    router.replace("/(auth)/sign-up");
   };
   const swiperRef = useRef<Swiper>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const isLastSlide = activeIndex === onBoarding.length - 1;
+
+  const pressNextSwiper = () => {};
 
   return (
     <SafeAreaView style={styles.container}>
@@ -38,6 +44,26 @@ const Onboarding = () => {
           </View>
         ))}
       </Swiper>
+      <CustomButton
+        onPress={() =>
+          isLastSlide
+            ? router.replace("/(auth)/sign-up")
+            : swiperRef.current?.scrollBy(1)
+        }
+        title={isLastSlide ? "Get Started" : "Next"}
+        buttonStyle={{
+          color: "red",
+          paddingVertical: 20,
+          paddingHorizontal: 15,
+          borderRadius: 999,
+          width: 290,
+          backgroundColor: "#145ea5",
+        }}
+        textStyle={{
+          textAlign: "center",
+          color: "white",
+        }}
+      />
     </SafeAreaView>
   );
 };

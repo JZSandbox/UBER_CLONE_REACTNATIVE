@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# React Native Uber Clone
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Project Status: 🚧 20% Complete
 
-## Get started
+This project is a clone of the popular ride-hailing app Uber, currently under development. The app is being built using **React Native**, **ES6**, and **TypeScript**, and aims to replicate the core functionalities of Uber, including user registration, real-time location tracking, and ride booking.
 
-1. Install dependencies
+## Tech Stack
 
-   ```bash
-   npm install
-   ```
+- **React Native**: The framework used to build the cross-platform mobile app.
+- **ES6**: Modern JavaScript (ECMAScript 6) for handling dynamic logic and asynchronous operations.
+- **TypeScript**: A strongly typed programming language that builds on JavaScript, ensuring type safety and better development tooling.
+- **STYLES**: Mainly did styles within the React component
 
-2. Start the app
+## Features (In Progress)
 
-   ```bash
-    npx expo start
-   ```
+- User registration and login
+- Booking rides
+- Driver matching and communication
 
-In the output, you'll find options to open the app in a
+## Requirements
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Node.js
+- React Native CLI or Expo
+- Android Studio or Xcode for emulation
+- TypeScript setup (optional but recommended)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## PREVIEW
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# First Impression (swiper int.)
+![First Impression - Welcome Screen](./preview/first_impression.gif)
